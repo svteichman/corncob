@@ -384,7 +384,7 @@ across (out of the 39 taxa tested).</p>
 <span>                                 test <span class="op">=</span> <span class="st">"LRT"</span>, boot <span class="op">=</span> <span class="cn">FALSE</span>,</span>
 <span>                                 fdr_cutoff <span class="op">=</span> <span class="fl">0.05</span><span class="op">)</span></span>
 <span><span class="va">dv_analysis</span><span class="op">$</span><span class="va">significant_taxa</span></span></code></pre></div>
-<pre><code><span><span class="co">## [1] "OTU.19"  "OTU.1"   "OTU.69"  "OTU.628" "OTU.480" "OTU.703" "OTU.417"</span></span></code></pre>
+<pre><code><span><span class="co">## [1] "OTU.19"  "OTU.69"  "OTU.628" "OTU.703" "OTU.417"</span></span></code></pre>
 <p>We can switch the OTU labels to taxonomic labels using . We supply
 our OTU labels as strings for the argument. We supply the object for the
 argument.</p>
@@ -406,13 +406,11 @@ argument.</p>
 <span><span class="co">##         "Bacteria_Chlorobi"              "Bacteria_TM6"</span></span></code></pre>
 <div class="sourceCode" id="cb37"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/otu_to_taxonomy.html">otu_to_taxonomy</a></span><span class="op">(</span>OTU <span class="op">=</span> <span class="va">dv_analysis</span><span class="op">$</span><span class="va">significant_taxa</span>, data <span class="op">=</span> <span class="va">soil</span><span class="op">)</span></span></code></pre></div>
-<pre><code><span><span class="co">##                    OTU.19                     OTU.1                    OTU.69 </span></span>
-<span><span class="co">##  "Bacteria_Acidobacteria" "Bacteria_Proteobacteria"  "Bacteria_Cyanobacteria" </span></span>
-<span><span class="co">##                   OTU.628                   OTU.480                   OTU.703 </span></span>
-<span><span class="co">##   "Bacteria_Spirochaetes"  "Bacteria_Fibrobacteres"  "Bacteria_Elusimicrobia" </span></span>
-<span><span class="co">##                   OTU.417 </span></span>
-<span><span class="co">##            "Bacteria_FBP"</span></span></code></pre>
-<p>In this case, we identified 7 taxa that are differentially-variable
+<pre><code><span><span class="co">##                   OTU.19                   OTU.69                  OTU.628 </span></span>
+<span><span class="co">## "Bacteria_Acidobacteria" "Bacteria_Cyanobacteria"  "Bacteria_Spirochaetes" </span></span>
+<span><span class="co">##                  OTU.703                  OTU.417 </span></span>
+<span><span class="co">## "Bacteria_Elusimicrobia"           "Bacteria_FBP"</span></span></code></pre>
+<p>In this case, we identified 5 taxa that are differentially-variable
 across (out of the 40 taxa tested).</p>
 <p>We can examine a subset of the p-values of our tests using:</p>
 <div class="sourceCode" id="cb39"><pre class="downlit sourceCode r">
