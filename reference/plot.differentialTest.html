@@ -95,7 +95,8 @@
 <span class="r-in"><span>                                phi.formula_null <span class="op">=</span> <span class="op">~</span> <span class="va">DayAmdmt</span>,</span></span>
 <span class="r-in"><span>                                test <span class="op">=</span> <span class="st">"Wald"</span>, boot <span class="op">=</span> <span class="cn">FALSE</span>,</span></span>
 <span class="r-in"><span>                                data <span class="op">=</span> <span class="va">soil_phylum_small</span>,</span></span>
-<span class="r-in"><span>                                fdr_cutoff <span class="op">=</span> <span class="fl">0.05</span><span class="op">)</span></span></span>
+<span class="r-in"><span>                                fdr_cutoff <span class="op">=</span> <span class="fl">0.05</span>,</span></span>
+<span class="r-in"><span>                                try_only <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">5</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">da_analysis</span>, level <span class="op">=</span> <span class="st">"Phylum"</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="plot.differentialTest-1.png" alt="" width="700" height="433"></span>
 <span class="r-in"><span></span></span>
